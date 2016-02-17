@@ -5,10 +5,12 @@ There is a hidden file in your user directory named .bash_profile. This file is 
 This file is called a ‘dot file’ and it's invisible in Finder. The ‘.’ at the beginning of the name renders it invisible. You can view all invisible files in the Terminal by typing `ls -al` in any directory. You might be surprised by how many you find.
 
 ## Setting up your Learn .bash_profile
+
  1. type `mv ~/.bash_profile{,.bak}` to backup any files you already have
  2. run `curl "https://raw.githubusercontent.com/flatiron-school/dotfiles/master/bash_profile" -o "$HOME/.bash_profile"`
  
  ## Reverting to your old bash profile
+ 
  1. ```cd ~```
  2. confirm that you have .bash_profile.bak in your root directory
  3. If it is present, ```rm .bash_profile```  (This will delete the current .bash_profile)
